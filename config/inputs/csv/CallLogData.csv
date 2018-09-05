@@ -1,0 +1,7 @@
+TestcaseID,TestCaseName,TestCaseDescription,EndPoint,extensionNumber,showBlocked,phoneNumber,page,perPage,HttpStatusCode,ErrorMessage
+1,CallLogData after receiving the call when 'showBlocked' is set to false,Verify the callLogData response after receiving the call ,/restapi/v1.0/account/~/extension/~/call-log,101,FALSE,4083061240,1,100,200,
+2,With invalid extensionNumber,Verify the callLogData response when incorrect value sent in the request param,/restapi/v1.0/account/~/extension/~/call-log,-1,FALSE,4083061240,1,100,,
+3,CallLogData after receiving the call when 'showBlocked' is set to true,Verify the callLogData response  when 'showBlocked' is set to true,/restapi/v1.0/account/~/extension/~/call-log,101,TRUE,4083061240,1,100,200,
+4,When 'page' field is empty,Verify the callLogData response  when 'page' field value is empty,/restapi/v1.0/account/~/extension/~/call-log,101,TRUE,4083061240,,100,,
+5,When 'page' field is invalid,Verify the callLogData response  when 'page' field value is incorrect,/restapi/v1.0/account/~/extension/~/call-log,101,TRUE,4083061240,-1,100,,
+6,When 'page' field is greater equals to 'PerPage',Verify the callLogData response  when 'Page' field value is greater equals to 'PerPage',/restapi/v1.0/account/~/extension/~/call-log,101,TRUE,4083061240,5,5,,

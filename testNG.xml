@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite data-provider-thread-count="2" name="API test" parallel="false" skipfailedinvocationCounts="false" thread-count="2">
+  <parameter name="propFile" value="./config/inputs/properties/loadConfig.properties"/>
+  <test annotations="JDK" junit="false" name="RingOutCall" skipfailedinvocationCounts="false" verbose="2">
+    <parameter name="propFile" value="./config/inputs/properties/loadConfig.properties"/>
+    <groups>
+      <run>
+        <include name="abstract"/>
+        <include name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+    </classes>
+  </test> 
+</suite>
